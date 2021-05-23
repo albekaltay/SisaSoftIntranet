@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+
+
+
+{% block content %}
+
+{% if messages %}
+
+<center><div class="alert alert-success" role="alert">
+    {% for message in messages %}
+
+
+        {{ message }}
+
+    {% endfor %}
+
+</div></center>
+{% endif %}
+
+
+<div class="container-fluid" xmlns="http://www.w3.org/1999/html">
+    <div class="card-header py-3">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <div class="card-body">
+
+
+          <div class="table-responsive">
+
+
+            <div class="text-info">
+             <h1>
+               <strong> İnsan Kaynakları </strong>  </h1> <br />
+            </div>
+
+
+          <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="https://www.sisasoft.com.tr/images/pages/icons/ik-politikasi-111009261.png" class="menuIcon">
+
+                                    &nbsp;&nbsp; <strong> İK Politikası </strong>
+
+
+                     </button>
+                  </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                Ürün ve hizmetlerimizde sağlamayı hedeflediğimiz başarının temel anahtarının birlikte hareket etmek ve başarıyı paylaşmak olduğunu biliyoruz. En değerli varlığımız olarak gördüğümüz çalışma ve mesai arkadaşlarımızın uzun yıllar sürecek olan bir kültüre, üretme ve değerli kılma hissine en büyük katkıyı yapacağına inanıyoruz.<br> <br>
+                                                Teknolojinin, trendlerin ve her şeyden önemlisi bilginin hızla eksen değiştirdiği bu dünyada çalışanlarımızın etkinlik ve verimliliğini en üst düzeye çıkaracak olan İnsan Kaynakları Yönetim Modellerini uygulamayı amaçlıyoruz. Bu kapsamda, inovasyon kültürünü destekleyerek yetenekli çalışanları istihdam etmek ve onlara olumlu bir iş ortamı yaratmak amacıyla İnsan Kaynakları süreç ve sistemlerimizi sürekli geliştiriyor ve yeniliyoruz.
+                                        </div>
+                                 </div>
+              </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <img src="https://www.sisasoft.com.tr/images/pages/icons/ik-uygulamalari-980117872.png" class="menuIcon">
+                                &nbsp;&nbsp; <strong> İK Uygulamaları </strong>
+                         </button>
+                        </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                                     <strong>İçede Yetişme Kültürü</strong><br> SisaSoft, bir sonraki projenin ya da bir sonraki süreçte devralıp başarıyla tamamlayacağı işlerin temek faktörleri olan çalışanlarını her zaman kendi bünyesinde yetiştirmeyi ve desteklemeyi tercih ediyor. Dışarıdan işe almaktansa büyümeyi içeriden itiyoruz. Bu sadece her birimizi mükemmelleşmek için zorlamakla kalmıyor, aynı zamanda şirket kültürümüzü ve sürekliliği liderlikte korumamızı sağlıyor. Her birimizin yeri geldiğinde kolaylıkla farklı roller ve sorumluluklar için adapte olmasını sağlıyor.<br><br>
+                                                     <strong>Hiçbir Zaman Yeterince İyi Değil</strong><br> SisaSoft, çalışanlarını mükemmellik için sürekli olarak zorlar. Çalışanları için öğrenme, büyüme ve inovasyonu teşvik eder. Çalışanların kullanabilecekleri ve öğrenebilecekleri geniş bir bilgi tabanını korur. Proje yaşam döngüsü “öğrenilen dersler” tartışmaları ile sona erer, bu yüzden başarılarımızdan ve başarısızlıklarımızdan ders alırız ve doğaçlama yapmak için daha da büyürüz. Sizler için bir öğrenme denizi olan adeta “Dijital Kütüphane” gibi proje yöneticileri ile çalışırsınız.<br><br>
+                                                     <strong>Ortam - Çevre</strong><br> SisaSoft'un adeta bulunduğu bölgede herkesi kıskandıracak olan fecii ferah bir çalışma ortamı var. Doğru çalışma çevresinin bireyde en iyisini ortaya koymak konusunda aşırı önemli olduğuna inanıyoruz. Açıklığa ve büyümeye olan tutkumuz, yeni fikirleri memnuniyetle karşılıyor ve bizi sürekli değişmeye ve gelişmeye zorluyor. Mümkün olduğu kadar çok çalıştığımız zamanlarda elbette var ama emin olun iş bittiğinde buna değerdi diyorsunuz.
+                                    </div>
+                            </div>
+
+
+
+
+                    </div>
+
+
+          </div>
+
+
+
+            </table>
+
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <center><img class="d-block w-50" src="https://media-exp1.licdn.com/dms/image/C4D22AQGDndbyIdDLcw/feedshare-shrink_1280/0/1603439894803?e=1623888000&v=beta&t=TeHdKL8IPl0notLoEOMmEATgxveiPBQbj6zGYaw2pnU" alt="First slide"></center>
+    </div>
+    <div class="carousel-item">
+        <center> <img class="d-block w-50" src="https://media-exp1.licdn.com/dms/image/C4D22AQFki6Pwsda_jQ/feedshare-shrink_1280/0/1603439895013?e=1619654400&v=beta&t=zk6LIvoHpLXuVWApGN3hiM3x5E_Dgxjhq-XhOaw6YCE"></center>
+    </div>
+      <div class="carousel-item">
+        <center> <img class="d-block w-20" src="https://lh3.googleusercontent.com/proxy/WLr6842Yn_xy0qlFXkxUrtJs3atF0rBIz3P7fYfaWWpt-0u5MsXsXSc0F1YziJ_adGffA98JH9_6AsRwI5HR8rfK72odW40_Ra8mbjE"></center>
+    </div>
+    <div class="carousel-item">
+      <center> <img class="d-block w-50" src="https://media-exp1.licdn.com/dms/image/C4D22AQGDndbyIdDLcw/feedshare-shrink_1280/0/1603439894803?e=1619654400&v=beta&t=rCIEdmIQwVyD7eJOLHOWMaufg44jEL8wf-ad_Q8DqFk"></center>
+    </div>
+      <div class="carousel-item">
+        <center> <img class="d-block w-50" width="50" height="500" src="https://media-exp1.licdn.com/dms/image/C4D22AQGgpMqgl9b_7A/feedshare-shrink_1280/0/1603439895025?e=1619654400&v=beta&t=4oxRJpRhvOCAY0_f6Ka_YWetdv9wBVrVNZohBE1UEvs"></center>
+    </div>
+
+
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-caret-left" viewBox="0 0 16 16">
+  <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+</svg>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-caret-right" viewBox="0 0 16 16">
+  <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+</svg>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}
+

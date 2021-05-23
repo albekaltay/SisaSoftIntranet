@@ -1,0 +1,155 @@
+{% extends 'layout.html' %}
+
+
+
+{% block content %}
+
+
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+   <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+
+
+
+
+                            <div class="card-body">
+                                <div class="table-responsive">
+
+
+
+                    <!-- Main page content-->
+                    <div class="container mt-4">
+                        <!-- Account page navigation-->
+                        <nav class="nav nav-borders">
+                            <a class="nav-link active ml-0" href="profile"><strong>Profil</strong></a>
+                            <a class="nav-link" href="change-password"><strong>Şifre Değiştir</strong></a>
+                        </nav>
+                        <hr class="mt-0 mb-4" />
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <!-- Profile picture card-->
+                                <div class="card">
+                                    <div class="card-header">Profil Fotoğrafı</div>
+                                    <div class="card-body text-center">
+                                        <!-- Profile picture image-->
+                                        <img class="img-account-profile rounded-circle mb-2" src="assets/img/illustrations/profiles/profile-1.png" alt />
+                                        <!-- Profile picture help block-->
+                                        <div class="small font-italic text-muted mb-4">JPG ya da PNG 5 MB'dan Büyük Olmamalı</div>
+                                        <!-- Profile picture upload button-->
+                                        <button class="btn btn-info" type="button">Yeni Fotoğraf Yükle</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8">
+                                <!-- Account details card-->
+                                <div class="card mb-4">
+                                    <div class="card-header">Hesap Detayları</div>
+                                    <div class="card-body">
+                                        <form>
+
+                                            <!-- Form Row-->
+                                            <div class="form-row">
+                                                <!-- Form Group (first name)-->
+                                                <div class="form-group col-md-6">
+                                                    <label class="small mb-1" for="inputFirstName">Ad</label>
+                                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Adınızı Giriniz" value="" />
+                                                </div>
+
+                                                <!-- Form Group (last name)-->
+                                                <div class="form-group col-md-6">
+                                                    <label class="small mb-1" for="inputLastName">Soyad</label>
+                                                    <input class="form-control" id="inputLastName" type="text" placeholder="Soyadınızı Giriniz" value="" />
+                                                </div>
+                                            </div>
+                                            <!-- Form Group (email)-->
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="inputUsername">Email</label>
+                                                <input class="form-control" id="inputUsername" type="text" placeholder="Enter your Email" value="Email" />
+                                            </div>
+                                            <!-- Form Row        -->
+                                            <div class="form-row">
+<!--                                                &lt;!&ndash; Form Group (organization name)&ndash;&gt;-->
+<!--                                                <div class="form-group col-md-6">-->
+<!--                                                    <label class="small mb-1" for="inputOrgName">Organization name</label>-->
+<!--                                                    <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap" />-->
+<!--                                                </div>-->
+<!--                                                &lt;!&ndash; Form Group (location)&ndash;&gt;-->
+<!--                                                <div class="form-group col-md-6">-->
+<!--                                                    <label class="small mb-1" for="inputLocation">Location</label>-->
+<!--                                                    <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA" />-->
+<!--                                                </div>-->
+                                            </div>
+                                            <!-- Form Group (email address)-->
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="inputEmailAddress">Pozisyon</label>
+                                                <input class="form-control" id="inputEmailAddress" type="email" placeholder="Pozisyon Giriniz" value="" />
+                                            </div>
+                                            <!-- Form Row-->
+                                            <div class="form-row">
+                                                <!-- Form Group (phone number)-->
+                                                <div class="form-group col-md-6">
+                                                    <label class="small mb-1" for="inputPhone">Telefen Numarası</label>
+                                                    <input class="form-control" id="inputPhone" type="tel" placeholder="Telefon Numaranızı Giriniz" value="" />
+                                                </div>
+                                                <!-- Form Group (birthday)-->
+                                                <div class="form-group col-md-6">
+                                                    <label class="small mb-1" for="inputBirthday">Doğum Tarihi</label>
+                                                    <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Doğum Tarihinizi Giriniz" value="" />
+                                                </div>
+                                            </div>
+                                            <!-- Save changes button-->
+                                            <button class="btn btn-info" type="button">Değişiklikleri Kaydet</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     <!-- profilin altındaki çizgi-->
+                                    <div class="card-header py-3">
+                                </div>
+                            </div>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+{% endblock %}
+

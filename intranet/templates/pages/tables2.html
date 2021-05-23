@@ -1,0 +1,110 @@
+{% extends 'layout.html' %}
+
+
+
+
+
+
+{% block content %}
+
+
+
+
+
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800"><strong>&nbsp; CheckList - İşe Giriş - 2 </strong> </h1>
+                    <hr><br>
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-info">Bilgi İşlem Takip Listesi</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+
+
+                                        <tr>
+                                            <th>İşlem Sırası</th>
+                                            <th>İşlem</th>
+                                            <th>Tamamlanma Durumu</th>
+                                            <th>Açıklama</th>
+
+
+
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>İşlem Sırası</th>
+                                            <th>İşlem</th>
+                                            <th>Tamamlanma Durumu</th>
+                                            <th>Açıklama</th>
+
+
+
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+{% if user.is_authenticated  %}
+                                    {% if dokumanlar %}
+                                        <tr>
+                                            {% for dok in dokumanlar %}
+
+
+                                            <td>{{ dok.documentNumber }}</td>
+
+                                            {% if dok.kontrol == 'Tamamlandı' %}
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#1cc88a" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+</svg></td>
+                                            {% else %}
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#e74a3b" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+</svg></td>
+                                            {% endif %}
+                                            <td>{{ dok.description }}</td>
+
+                                        </tr>
+                                            {% endfor %}
+                                    {% endif %}
+
+{% endif %}
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
